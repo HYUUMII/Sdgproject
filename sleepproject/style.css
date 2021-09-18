@@ -21,6 +21,7 @@ h1 {
    color: white !important;
    text-shadow: 3px 3px 1px #00DCFF;
    font-size: 50px !important;
+   
 
 }
 
@@ -36,7 +37,8 @@ h1 {
 .logoo {
     padding-top: 20px;
     padding-bottom:20px;
-    width: 100%;
+    width: 150%;
+    
 
     
 }
