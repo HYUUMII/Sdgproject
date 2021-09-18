@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
 }
-h1 {
-   text-shadow: 0 0 3px #ffffff;
-   font-size: 30px;
+
+.col-1  {
+  
    text-align: center;
    left: 0;
    line-height: 300px;
@@ -13,14 +13,29 @@ h1 {
    text-align: center;
    top: 60%;
    width: 100%;
-   
+
 }
+
+h1 {
+    font-family: 'Oswald', Times, serif !important;
+   color: white !important;
+   text-shadow: 3px 3px 1px #00DCFF;
+   font-size: 50px !important;
+
+}
+
+
+
+
+
 
 .front {
     width: 100%;
 }
 
 .logoo {
+    padding-top: 20px;
+    padding-bottom:20px;
     width: 100%;
 
     
@@ -37,4 +52,5 @@ h1 {
 
 .bg-light {
     background-color: transparent!important;
+    background: none;
 }
