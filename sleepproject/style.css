@@ -26,7 +26,15 @@ h1 {
     
 }
 
-.header{
+
+
+
+.navbar.transparent.navbar-inverse .navbar-inner .bg-light {
     width: 100%;
-    background-color: rgba(0, 0, 0, .2);
+
+
+}
+
+.bg-light {
+    background-color: transparent!important;
 }
