@@ -1,58 +1,333 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.col-1  {
+
+
+header  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #000;
+  padding: 35px 100px 0;
   
-   text-align: center;
-   left: 0;
-   line-height: 300px;
-   margin-top: -100px;
-   position: absolute;
-   text-align: center;
-   top: 60%;
-   width: 100%;
 
 }
 
-h1 {
-    font-family: 'Oswald', Times, serif !important;
+.logoo {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom:20px;
+    width: 150%;
+
+}
+
+
+@media (max-width:1000px) {
+
+
+    header {
+
+        padding:20px 50px;
+    }
+
+}
+
+@media (max-width:700px) {
+
+    
+    header {
+        flex-direction: column;
+    }
+
+    
+
+
+
+}
+
+
+
+/* front page */
+
+.section {
+
+display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex;
+display: -o-flex;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 110px 100px;
+}
+
+@media (max-width:1000px) {
+
+    .section {
+
+        padding:100px 50px;
+
+    }
+}
+
+
+@media (max-width:600px) {
+
+    .section {
+
+        padding:125px 30px;
+
+    }
+}
+
+
+section p {
+
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 0 20px;
+    line-height: 2;
+
+}
+
+.front-page {
+
+
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: black;
+    text-align: center;
+
+}
+
+
+ 
+
+
+
+
+
+
+.front-page .background {
+    background-image: url(images/front.png);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    -webkit-background-size:cover;
+    background-size:cover;
+    z-index: -1;
+}
+
+.front-page h1 {
+    flex: 100%;
+   font-family: 'Oswald', Times, serif !important;
    color: white !important;
    text-shadow: 3px 3px 1px #00DCFF;
    font-size: 50px !important;
+   text-align: center !important;
+   left: 0;
+   margin-top: -75px;
+   position: absolute;
+   top: 60%;
+   width: 100%;
    
 
 }
 
 
+@media (max-width:800px) {
+
+    .front-page {
+
+        min-height: 600px;
+    }
 
 
+    .front-page h1 {
 
+        font-size: 32px;
 
-.front {
-    width: 100%;
+    
+
+    }
+
 }
 
-.logoo {
+
+
+
+
+/* tips */
+
+
+ul.tips-content {
+ width: 100%;
+ display: -webkit-flex;
+ display: -moz-flex;
+ display: -ms-flex;
+ display: -o-flex;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+
+}
+
+
+.tips-content li {
+
+    padding: 20px;
+    height: 290px;
+    background-clip: content-box;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.tips-left {
+
+    
+    height: 600px;
+    width: 480px;
+    background-image: url(images/drunk_koala-01-01.png);
     padding-top: 20px;
-    padding-bottom:20px;
-    width: 150%;
+
+}
+
+
+.tips-left2 {
+
     
+    height: 600px;
+    width: 480px;
+    background-image: url(images/sleepingkoala.png);
+    padding-top: 20px;
 
+}
+
+
+.tips-left3 {
+
+    
+    height: 600px;
+    width: 480px;
+    background-image: url(images/MASKED_Koala-01.png);
+    padding-top: 20px;
+
+}
+
+.tips-left4 {
+
+    
+    height: 600px;
+    width: 480px;
+    background-image: url(images/workingout_Koala-01.png);
+    padding-top: 20px;
+
+}
+
+.tips-left5 {
+
+    
+    height: 600px;
+    width: 480px;
+    background-image: url(images/workingout_Koala-01.png);
+    padding-top: 20px;
     
 }
 
 
 
 
-.navbar.transparent.navbar-inverse .navbar-inner .bg-light {
-    width: 100%;
+.tips-right {
+
+    flex-basis: 50%;
 
 
 }
 
-.bg-light {
-    background-color: transparent!important;
-    background: none;
+.tips-content p {
+
+    max-width: 800px;
+    margin-bottom: 35px;
+    line-height:1.5;
+    text-align: left;
+    padding-left: 0;
+
 }
+
+.section-title {
+
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 5%;
+    text-align: center;
+    font-family: 'Oswald', Times, serif !important;
+    padding-top: 100px;
+    padding-bottom: 10px;
+
+
+
+}
+
+
+.tips-right h2 {
+
+    margin-bottom: 3%;
+
+
+}
+
+
+@media (max-width:1000px) {
+
+    .tips-left,
+    .tips-right {
+
+        flex-basis: 100%;
+    }
+
+
+    .about-content li {
+        padding: 8px;
+
+
+
+    }
+
+
+
+}
+
+
+ h4 p {
+    flex: 100%;
+   font-family: 'Oswald', Times, serif !important;
+   color: rgb(0, 0, 0) !important;
+   font-size: 24px !important;
+   text-align: center;
+  
+
+}
+
